@@ -1212,6 +1212,21 @@ blockquote h6 {
     margin-bottom: 1.25rem;
 }
 
+.card-columns .card figure{
+    position: relative;
+    background-color: rgb(255, 119, 119);
+}
+
+.card-columns .card figure p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 .card-body, .card-footer, .card-header {
     padding: 1.5625rem;
 }
@@ -1774,6 +1789,7 @@ form button{
 .depoimentos{
     padding: 4vw 0;
     text-align: center;
+    background-color: #06527A;
 }
 
 .depoimentos h4{
@@ -1797,7 +1813,7 @@ form button{
 }
 
 .mentor-banner{
-    position: relative;
+    position: relative;                                                                                                                                   
 }
 
 .mentor-banner img{
@@ -2086,6 +2102,10 @@ main :last-child,
         font-size: 5vw;
     }
 
+    header .direita-{
+        display: none;
+    }
+
     .visao .container-{
         padding: 0 6vw;
     }
@@ -2110,6 +2130,23 @@ main :last-child,
 
     .publico .box p{
         font-size: 12px;
+    }
+
+    .depoimentos{
+        background-color: #06527A;
+        padding-top: 8vw;
+    }
+
+    .container-accordion .interno{
+        padding: 0 0;
+    }
+
+    .mentor-banner{
+        margin: 200px 0 250px 0;
+    }
+
+    .mentor-banner img{
+        width: 300px;
     }
 }
 
@@ -3086,7 +3123,25 @@ E. Template Specific Elements
 
 .home-servicos .boards .board{
     width: 33%;
-    padding: 0 8px;
+    margin: 0 8px;
+}
+
+.home-servicos .boards .board:nth-child(1){
+    background-image: url(../img/online-news.jpg);
+    background-position: center right;
+    background-size: cover;
+}
+
+.home-servicos .boards .board:nth-child(2){
+    background-image: url(../img/palestra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-servicos .boards .board:nth-child(3){
+    background-image: url(../img/treinamento.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .home-servicos .boards .board .sobreposicao{
@@ -3113,4 +3168,28 @@ E. Template Specific Elements
     border: none;
     background-color:  #D59608;
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .home-banner .sobreposicao{
+        padding: 25vw 0 0 0;
+    }
+
+
+    .home-servicos .boards .board{
+        width: 100%;
+        margin: 10px 8px;
+    }
+
+    .boards{
+        flex-wrap: wrap;
+    }
+
+    .home-sobre-mim .direita{
+        width: 100%;
+    }
+
+    .home-sobre-mim .esquerda{
+        display: none;
+    }
 }
