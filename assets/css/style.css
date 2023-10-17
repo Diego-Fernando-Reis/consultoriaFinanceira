@@ -1228,7 +1228,7 @@ blockquote h6 {
 }
 
 .card-body, .card-footer, .card-header {
-    padding: 1.5625rem;
+    padding:  0 1.5625rem;
 }
 
 .ts-cards-same-height > div[class*='col-'] {
@@ -1619,7 +1619,7 @@ body.has-loading-screen.loading-done:after {
 }
 
 header.banner{
-    padding: 10vw 12vw !important;
+    padding: 0 12vw !important;
 }
 
 header .texto-principal{
@@ -1656,6 +1656,10 @@ form button{
     background-color: #141a3a;
     border: 2px solid black;
     color: white;
+}
+
+header .esquerda-{
+    padding: 10vw 0 !important;
 }
 
 .direita-{
@@ -1786,6 +1790,10 @@ form button{
     margin-bottom: 2vw;
 }
 
+.mentiram .card-body p{
+    text-align: justify;
+}
+
 .depoimentos{
     padding: 4vw 0;
     text-align: center;
@@ -1822,6 +1830,11 @@ form button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.mentor span{
+    font-size: 16px;
+    color: #2e2e2e;
 }
 /*Accordion*/
 
