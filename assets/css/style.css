@@ -1679,11 +1679,13 @@ header .esquerda-{
 
 .visao{
     background-color: #06527A;
+    width: 100%;
 }
 
 .visao .container-{
     padding: 0 12vw;
     text-align: center;
+    width: 100%;
 }
 
 .visao .negrito{
@@ -1795,7 +1797,7 @@ header .esquerda-{
 }
 
 .mentiram .card-body p{
-    text-align: justify;
+    text-align: left;
 }
 
 .depoimentos{
@@ -1821,6 +1823,7 @@ header .esquerda-{
 .depoimentos .down{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .depoimentos .down .esquerda{
@@ -1828,10 +1831,12 @@ header .esquerda-{
     text-align: right;
     padding-right: 0;
     margin-right: 0;
+    position: relative;
 }
 
 .depoimentos .slider{
     background-color: #06527A;
+    padding-left: 20px;
 }
 
 .depoimentos .down .direita{
@@ -1840,13 +1845,17 @@ header .esquerda-{
 }
 
 .depoimentos .down .direita .slider img{
-    width: 30vw;
-    height: 400px;
+    width: 20vw;
     background-color: #06527A;
+    margin: 0 0;
 }
 
 .depoimentos p{
     text-align: right;
+    width: 30vw;
+    right: 0;
+    position: absolute;
+
 }
 
 .mentor .container-{
@@ -2207,6 +2216,31 @@ main :last-child,
     .depoimentos{
         background-color: #06527A;
         padding-top: 8vw;
+        padding-bottom: 80px;
+    }
+
+    .depoimentos .titulo{
+        margin-bottom: 20px;
+    }
+
+    .depoimentos .down .esquerda{
+        width: 100%;
+    }
+
+    .depoimentos .down .direita{
+        width: 100%;
+    }
+
+    .depoimentos .down .direita .slider img{
+        width: 70vw;
+    }
+    
+    .depoimentos p{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding-top: 0;
+
     }
 
     .container-accordion .interno{
