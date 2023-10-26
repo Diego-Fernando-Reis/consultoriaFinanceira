@@ -1647,7 +1647,7 @@ form input{
     border: 2px solid black;
 }
 
-form button{
+form input[type='submit']{
     width: 100%;
     margin-top: 20px;
     cursor: pointer;
@@ -1656,6 +1656,16 @@ form button{
     background-color: #141a3a;
     border: 2px solid black;
     color: white;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+h4 a{
+    color: white;
+    text-decoration: none;
 }
 
 header .esquerda-{
