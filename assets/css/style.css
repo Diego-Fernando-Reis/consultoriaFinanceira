@@ -82,6 +82,9 @@ A. Basic Styling
 /*-------------------------------------------
   -- Styling - Colors, Font Size, Font Family
 -------------------------------------------*/
+.esquerda- h3{
+    color: #06527A;
+}
 .italico{
     font-style: italic;
 }
